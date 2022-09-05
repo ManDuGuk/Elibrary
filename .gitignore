@@ -1,0 +1,14 @@
+*.back
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+/target/
+!.mvn/wrapper/maven-wrapper.jar

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+
+footer{
+	background: #043763;
+	text-align: center;
+	padding:26px 0;
+	width: 100%;
+}
+
+footer p{
+	color:#fff;
+	font-size:0.875rem;
+}

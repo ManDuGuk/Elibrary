@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+
+/* 헤더에서 쓰는 부분-------------------------------------------------------s */
+
+#header-background-color{
+	background-color: rgb(236,236,239);
+}
+
+/*<header> */
+.page-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*<header> */
+.wrapper-header{
+    max-width: 1200px;
+    margin: 0 auto;
+    max-height: 90px;
+    
+}
+
+/* 좌상단 이미지 로고 */
+.logo{
+    width: 210px;
+    margin-top: 14px;
+}
+
+/* 상단바 메뉴 s*/
+.main-nav{
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 50px;
+    list-style: none;
+}
+
+.main-nav li{
+    margin-left: 36px;
+}
+
+.main-nav a{
+    color: #432;
+}
+
+.main-nav a:hover{
+    color: #0bd;
+}
+
+/* 상단바 메뉴 e*/
+
+.search-title{
+	font-size:1.5em;
+	padding:0 8px 8px;
+	border-bottom:2px #043763 solid;
+	font-weight:normal;
+	width: 150px;
+}
+
+.rec{
+	left: 19%;
+	position: relative;
+}
+
+.rec-books{
+	font-size:1.5em;
+	padding:0 8px 8px;
+	border-bottom:2px #043763 solid;
+	font-weight:normal;
+	width: 150px;
+}
+
+.aregist {
+	color: white;
+	padding: 25px 50px 50px 25px;
+}
+
+
+
+
+
+
+

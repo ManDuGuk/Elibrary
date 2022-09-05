@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+
+.card-position{
+	display: flex;
+	justify-content: center;
+	
+}
+
+.card{
+	margin: 60px;
+}
+
+.card-img-top{
+	width: 200px;
+
+  /* 	object-fit: cover; */
+}
+	
+
+.card-body{
+	
+}
+
+.card-title{
+	
+}
+
+.card-text{
+	
+}
+.btn{
+	
+}
+
+.btn-primary{
+	
+}

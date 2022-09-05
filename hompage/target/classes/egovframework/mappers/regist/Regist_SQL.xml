@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="egovframework.let.regist.service.impl.RegistMapper">
+	
+	<resultMap id="retist" type="egovframework.let.regist.service.RegistVO">
+		<result property="registId" column="REGIST_ID"/>
+		<result property="registPw" column="REGIST_PW"/>
+		<result property="registName" column="REGIST_NAME"/>
+		<result property="id" column="ID"/>
+		<result property="registAt" column="REGIST_AT"/>
+	</resultMap> 
+	
+	
+	
+	<select id="selectRegistList" resultType="egovMap">
+		SELECT
+		 REGIST_ID
+		 ,REGIST_PW
+		 ,REGIST_NAME
+		 ,ID
+		 ,REGIST_AT
+		 FROM REGIST
+		 WHERE REGIST_AT='Y'
+	</select>
+	
+	<insert id="doinsertregist" parameterType="egovframework.let.regist.service.RegistVO">
+		INSERT INTO REGIST
+		(REGIST_ID, REGIST_PW, REGIST_NAME)
+		VALUES(#{registId},#{registPw},#{registName});
+	</insert>
+	
+	<update id="updateregist" parameterType="egovframework.let.regist.service.RegistVO">
+		UPDATE REGIST SET
+		REGIST_ID=#{registId}
+		,REGIST_PW=#{registPw}
+		,REGIST_NAME=#{registName}
+		WHERE ID =#{id}
+	</update>
+	
+	<delete id="deleteregist" parameterType="egovframework.let.regist.service.RegistVO">
+		UPDATE REGIST SET
+		REGIST_AT='N'
+		WHERE ID =#{id}
+	</delete>
+	
+	
+	
+</mapper>
+	
+	
